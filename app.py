@@ -35,3 +35,5 @@ def predict():
     
     return render_template('index.html', prediction_text='Based on our analysis, you are expected to achieve a remarkable score of [{}%] when dedicating [{}] hours to your studies each day.'.format(output, int(features_value[0])))
 
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=8080)
